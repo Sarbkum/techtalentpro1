@@ -1,0 +1,176 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Tech Talent First Project 1</title>
+<style>
+#logo {
+    margin: 0;
+    padding: 5px;
+    font-family: 'Noto Sans Mandaic', sans-serif;
+    color: black;
+}
+
+@media only screen and (max-width:600px) {
+body {
+    background-color:darkgrey;
+}
+    }
+
+
+#mainNav {
+    display: inline;
+    align-items: left;
+    table-layout: auto;
+}
+ul {
+    list-style: none;
+}
+#mainNav {
+    margin: 10px;
+    width: 1000px;
+    font-family: sans-serif;
+    font-size: 12px;
+    text-align: center;
+}
+#mainNav li {
+    display: block;
+    width: 120px;
+    float: left;
+    margin-left: 2px;
+    border: 1px solid #000;
+}
+#mainNav a {
+    display: block;
+    padding: 3px;
+    text-decoration: none;
+    background-color: gray;
+    color: white;
+}
+#mainNav a:hover {
+    background-color: midnightblue;
+    color: white;
+}
+#contactForm{
+    background-color: midnightblue;
+    padding: 20px;
+    color: white;
+}
+    input {
+        padding: 10px;
+        width: 200px; 
+        margin-left:10px;
+       
+    }
+    table, tr, td {
+         font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+    }
+footer {
+    height: 20px;
+    padding: 10px;
+    background-color: cadetblue;
+    color: white;
+}
+center {
+    font-size: 12px;
+    line-height: 20px;
+}
+h1 {
+    color: white;
+    font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+    font-size: 50px;
+    background-color: cadetblue;
+    padding: 5px;
+    font-
+}
+    h2,p {
+        padding-left:10px;
+    }
+    #submit {
+        background-color: darkcyan;
+        border-radius: 20px;
+        box-shadow:  20px;
+    }
+</style>
+<script>
+function validateForm() {
+  let x = document.forms["myForm"]["Name"].value;
+    let y = document.forms["myForm"]["Tel"].value;
+    let z = document.forms["myForm"]["Email"].value;
+  if (x == "") {
+    alert("Name must be filled out");
+    return false;
+  }
+    if (y== "") {
+    alert("Tel must be filled out");
+    return false;
+  }
+    if (z== "") {
+    alert("Email must be filled out");
+    return false;
+  }
+}
+</script>
+</head>
+
+<body>
+<div id="logo">
+  <h1>Sound of music</h1>
+  <summary>A Course booking website</summary>
+</div>
+<nav>
+  <ul id="mainNav">
+    <li><a href="#">Home </a></li>
+    <li><a href="#">Up Coming Batches </a></li>
+    <li><a href="#">About Us </a></li>
+    <li><a href="#">Contact Us</a></li>
+  </ul>
+</nav>
+<article class="browser">
+  <h2>Our Vision</h2>
+  <p>But behind all of that, behind all those little moments of musical exploration and alchemy, are great teachers.
+
+Teachers who don’t just love music. Teachers who aren’t just qualified to teach it. But teachers who feel inspired to do it.
+
+And who transmit that inspiration and passion to every student, in every lesson.
+
+That’s the standard that we set for ourselves; a teaching ethos that defines our purpose and elevates our services.</p>
+  
+</article>
+<article class="browser">
+  <h2>Online Form</h2>
+  <form name="myForm" action="#" onsubmit="return validateForm()" method="post" id="contactForm">
+    <h2>Please leave your details</h2>
+    <table>
+      <tr>
+        <td>Name:</td>
+        <td><input type="text" name="Name"></td>
+      </tr>
+      <tr>
+        <td> Tel: </td>
+        <td><input type="text" name="Tel"></td>
+      </tr>
+      <tr>
+        <td>Email:</td>
+        <td><input type="text" name="Email"></td>
+      </tr>
+    </table>
+    <br/>
+    <input type="submit" value="Submit" id="submit">
+  </form>
+</article>
+<article class="browser">
+  <h2>Our Programmes</h2>
+  <p>At Learning Music our services span a range of programmes covering all aspects of your music provision.
+
+Primary or secondary, curricular or extra-curricular, our specialist teachers deliver outstanding tuition.</p>
+</article>
+<footer>
+  <center>
+    Copyright Sarban &copy; 2021
+  </center>
+</footer>
+</body>
+</html>
